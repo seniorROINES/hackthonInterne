@@ -7,7 +7,10 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap');
 
-        /* Styles du header */
+        * {
+            box-sizing: border-box;
+        }
+
         .header {
             padding: 10px;
             display: flex;
@@ -15,6 +18,11 @@
             background: black;
             margin: -12px -12px 0 -12px;
             padding-left: 20px;
+        }
+
+        body {
+            background: url(./assets/sandy-ravaloniaina-5EOvj4Dz5s8-unsplash.jpg);
+            background-size: cover;
         }
 
         .navbar {
@@ -53,7 +61,8 @@
             margin-top: 50px;
             font-family: "Ubuntu", sans-serif;
             justify-content: center;
-            background: #fff;
+            background-color: rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(10px);
             margin: 200px;
             padding: 0 10px 30px;
             border-radius: 20px;
@@ -125,6 +134,5 @@
             <a href="#" class="quick-btn">Agent IA</a>
         </div>
     </div>
-
 </body>
 </html>
