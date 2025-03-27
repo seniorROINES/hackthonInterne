@@ -17,9 +17,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('/assets/background.jpg');
+    background: url(./assets/background.jpg);
     background-size: cover;
-    flex-direction: row;
     margin: 0;
 }
 
@@ -29,15 +28,15 @@ h2 {
 
 .container {
     background: #fff;
-    padding: 20px;
+    padding: 24px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 50px;
     width: 300px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 100%%;
+    width: 100%;
     
 }
 
@@ -69,22 +68,22 @@ button:active {
     background-color: black;
 }
 
-.creerCompte {
-    display: center;
-    margin-top: 13px;
-    margin: 0 25px;
-}
 
 #forgotPassword {
     text-decoration: none;
     color: blue;
+    transition: all 0.1s ease;
 }
 
-.creerCompte a {
-    text-decoration: none;
-    color: blue;
+#forgotPassword:hover {
+    padding: 9px;
+    background: blue;
+    border-radius: 50px;
+    color: #fff;
 
 }
+
+
     </style>
 </head>
 <body>
@@ -102,11 +101,15 @@ button:active {
                 <input type="email" id="signupEmail" placeholder="Email" required>
                 <input type="password" id="signupPassword" placeholder="Mot de passe" required>
                 <button type="submit">S'inscrire</button>
-    
+                
+                
+            </form>
+            <p><a href="Mdpoubl.html" id="forgotPassword">mot de passe oublié</a></p>
         </div>
     
-        <p><a href="Mdpoubl.html" id="forgotPassword">mot de passe oublié</a></p>
-        </form>
+        
+        
+        
     </div>
     <script src="#"></script>
 </body>
