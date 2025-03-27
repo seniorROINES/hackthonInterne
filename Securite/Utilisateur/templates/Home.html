@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Acceuil</title>
+    <link rel="shortcut icon" href="./assets/logo-home.png">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Ubuntu:wght@300;400;700&display=swap');
 
@@ -14,10 +15,20 @@
         .header {
             padding: 10px;
             display: flex;
-            justify-content: flex-end;
+            align-items: center;
+            justify-content: space-between;
             background: black;
-            margin: -12px -12px 0 -12px;
-            padding-left: 20px;
+            margin: -12px;
+            padding: 5px 2px;
+        }
+
+        .logo {
+
+        }
+
+        h2 {
+            color: orange;
+            padding-left: 50px;
         }
 
         body {
@@ -115,17 +126,20 @@
 <body>
 
     <div class="header">
+        <div class="logo">
+            <h2>Nexus</h2>
+        </div>
         <nav class="navbar">
             <ul>
-                <li><a href="Home.html" id="Home">Home</a></li>
-                <li><a href="redZone.html">All Red Zones</a></li>
-                <li><a href="num.html">Emergency number</a></li>
+                <li><a href="Home.html" id="Home">Acceuil</a></li>
+                <li><a href="redZone.html">Zones rouges</a></li>
+                <li><a href="num.html">Numeros d'urgences</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="container">
-        <h1>Duralex</h1>
+        <h1>Nexus</h1>
         <p>Pour maintenir la paix et la sécurité, nous devons instaurer la sécurité, nous entraider et nous faire confiance car notre satisfaction, <br> 
             <em>c'est votre sécurité.</em>
         </p>
