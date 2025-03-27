@@ -73,20 +73,12 @@ button:active {
     background-color: black;
 }
 
-.login {
-    display: center;
-    margin-top: 13px;
-    margin: 0 25px;
-}
-
-#forgotPassword {
-    text-decoration: none;
-    color: blue;
-}
 
 label {
     padding-top: 20px;
     font-size: 15px;
+    color: blue;
+    text-decoration: none;
 }
 
 .login a {
@@ -105,11 +97,34 @@ label {
     margin-buttom: 3px;
 }
 
+header .retour a{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+
+}
+
+header .retour a:hover {
+    background-color: blue;
+}
+
 
     </style>
 
 </head>
 <body>
+    <header>
+        <div class="retour">
+            <a href="logging.html" class="back-btn">Retour</a>
+        </div>
+    </header>
     <div class="container">
         <h2>Inscription</h2>
         <form id="signupForm">
