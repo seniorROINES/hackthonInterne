@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InformationClient</title>
+    <link rel="stylesheet" href="Mdp.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Sue+Ellen+Francisco&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/background.jpg');
+    background-size: cover;
+    flex-direction: row;
+    margin: 0;
+}
+
+h2 {
+    color: blue;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%%;
+    
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: ;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: darkblue;
+    color: #fff;
+}
+
+button:active {
+    transform: scale(0.9);
+    background-color: black;
+}
+
+.login {
+    display: center;
+    margin-top: 13px;
+    margin: 0 25px;
+}
+
+#forgotPassword {
+    text-decoration: none;
+    color: blue;
+}
+
+label {
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.login a {
+    text-decoration: none;
+    color: blue;
+
+}
+
+.gender {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender label {
+    font-size: 14px;
+    margin-buttom: 3px;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Inscription</h2>
+        <form id="signupForm">
+            <input type="text" id="firstName" placeholder="Prénom" required>
+            <input type="text" id="lastName" placeholder="Nom" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Mot de passe" required>
+            <input type="password" id="confirmPassword" placeholder="Confirmer le mot de passe" required>
+            <input type="text" id="address" placeholder="Adresse" required>
+           
+            <label for="securityQuestion">Choisissez une question de sécurité</label>
+            <select id="securityQuestion" required>
+                <option value="favoriteColor">Quelle est votre couleur préférée ?</option>
+                <option value="firstPet">Quel est le nom de votre premier animal de compagnie ?</option>
+                <option value="motherName">Quel est le prénom de votre mère ?</option>
+            </select>
+
+
+            
+            <div class="gender">
+                <label for="gender">Genre</label>
+                <select id="gender" required>
+                    <option value="male">Homme</option>
+                    <option value="female">Femme</option>
+                    <option value="other">Autre</option>
+                </select>
+
+                <label for="securityAnswer">Réponse à la question de sécurité</label>
+        <input type="text" id="securityAnswer" placeholder="Réponse" required>
+
+            </div>
+    
+            <button type="submit">S'inscrire</button>
+        </form>
+        <p class="login">Déjà inscrit ? <a href="logging.html">Se connecter</a></p>
+    </div>
+</body>
+</html>
